@@ -5,12 +5,11 @@ import com.alibaba.csp.sentinel.adapter.gateway.zuul.filters.SentinelZuulPostFil
 import com.alibaba.csp.sentinel.adapter.gateway.zuul.filters.SentinelZuulPreFilter;
 import com.netflix.zuul.ZuulFilter;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * @author wuweifeng wrote on 2019/7/3.
  */
-@Configuration
+//@Configuration
 public class ZuulConfig {
 
     @Bean
