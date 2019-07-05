@@ -6,7 +6,7 @@ zuul:
       path: /nacosclient/**
       serviceId: nacosclient
       #url: http://localhost:8888/baoban/
-  prefix: /nacos
+  prefix: /nacoszuul
 spring:
   application:
     name: sentinelzuul
