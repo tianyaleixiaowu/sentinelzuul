@@ -1,0 +1,14 @@
+server:
+  port: 9999
+zuul:
+  routes:
+    one:
+      path: /baoban/**
+      url: http://localhost:8888/baoban/
+spring:
+  application:
+    name: sentinelzuul
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS:47.92.107.76:80}
