@@ -29,5 +29,7 @@ public class UrlFilter implements Filter {
         //    httpRequest.getRequestDispatcher(path).forward(httpRequest, response);
         //}
         logger.info("path:" + path);
+
+        chain.doFilter(httpRequest, response);
     }
 }
