@@ -34,9 +34,9 @@ public class GatewayRuleConfig {
         // Prepare some gateway rules and API definitions (only for demo).
         // It's recommended to leverage dynamic data source or the Sentinel dashboard to push the rules.
         initCustomizedApis();
-        //initGatewayRules();
+        initGatewayRules();
         initFallback();
-        initZookeeperApis();
+        //initZookeeperApis();
     }
 
     private void initFallback() {
