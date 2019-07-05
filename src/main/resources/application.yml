@@ -3,8 +3,9 @@ server:
 zuul:
   routes:
     one:
-      path: /baoban/**
-      url: http://localhost:8888/baoban/
+      path: /nacosclient/**
+      serviceId: nacosclient
+      #url: http://localhost:8888/baoban/
 spring:
   application:
     name: sentinelzuul
