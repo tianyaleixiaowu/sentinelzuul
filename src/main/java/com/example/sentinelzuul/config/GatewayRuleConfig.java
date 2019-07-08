@@ -46,10 +46,10 @@ public class GatewayRuleConfig {
 
     private void initCustomizedApis() {
         Set<ApiDefinition> definitions = new HashSet<>();
-        ApiDefinition api1 = new ApiDefinition("baobao_api")
+        ApiDefinition api1 = new ApiDefinition("nacosclient")
                 .setPredicateItems(new HashSet<ApiPredicateItem>() {{
                     //add(new ApiPathPredicateItem().setPattern("/ahas"));
-                    add(new ApiPathPredicateItem().setPattern("/baoban/**")
+                    add(new ApiPathPredicateItem().setPattern("/nacosclient/**")
                             .setMatchStrategy(URL_MATCH_STRATEGY_PREFIX));
                 }});
         //ApiDefinition api2 = new ApiDefinition("another_customized_api")
@@ -74,7 +74,7 @@ public class GatewayRuleConfig {
 
     private void initGatewayRules() {
         Set<GatewayFlowRule> rules = new HashSet<>();
-        rules.add(new GatewayFlowRule("baobao_api")
+        rules.add(new GatewayFlowRule("nacosclient")
                 .setResourceMode(SentinelGatewayConstants.RESOURCE_MODE_CUSTOM_API_NAME)
                 .setCount(1)
                 .setIntervalSec(1)
